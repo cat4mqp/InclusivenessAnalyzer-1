@@ -17,6 +17,7 @@ async function run() {
     console.log(`Excluding terms: ${excludeTerms}`);
     var exclusions = excludeTerms.split(',');
 
+    
     var passed = true;
 
     const dir = process.env.GITHUB_WORKSPACE;
