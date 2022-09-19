@@ -48,13 +48,14 @@ async function run() {
       core.endGroup();
     });
 
-    if (!passed)
+    if (!passed) {
       if (outputType == 'failure') {
         core.setFailed("Found non inclusive terms in some files.");
       }
       else {
         core.warning("Found non inclusive terms in some files.");
       }
+    }
 
   } catch (error) {
     core.setFailed(error.message);
