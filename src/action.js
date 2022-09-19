@@ -7,7 +7,7 @@ const github = require('@actions/github');
 
 const fs = require('fs');
 
-async function run() { 
+async function run() {
   try {
     // `fail-build` input defined in action metadata file
     const failBuild = core.getInput('fail-build');
@@ -17,12 +17,12 @@ async function run() {
     console.log(`Excluding terms: ${excludeTerms}`);
     var exclusions = excludeTerms.split(',');
 
-    
+
     var passed = true;
 
     const dir = process.env.GITHUB_WORKSPACE;
     //const dir = `c:\\temp`;
-    
+
     const nonInclusiveTerms = await getNonInclusiveTerms();
 
     // list all files in the directory
@@ -30,7 +30,7 @@ async function run() {
 
     filenames.forEach(filename => {
       console.log(`Scanning file: ${filename}`);
-      
+
       nonInclusiveTerms.forEach(phrase => {
         if (!exclusions.includes(phrase)) {
           var lines = checkFileForPhrase(filename.toString(), phrase.term);
@@ -46,14 +46,14 @@ async function run() {
           }
         }
         else
-        console.log(`Skipping the term '${phrase.term}'`);
+          console.log(`Skipping the term '${phrase.term}'`);
       });
     });
 
     if (!passed)
-      if (failBuild === 'true')
-        core.setFailed("Found non inclusive terms in some files.");
-      else
+      // if (failBuild === 'true')
+      //   core.setFailed("Found non inclusive terms in some files.");
+      // else
         core.warning("Found non inclusive terms in some files.");
 
   } catch (error) {
