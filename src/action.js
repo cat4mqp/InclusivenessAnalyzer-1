@@ -12,6 +12,8 @@ async function run() {
     // `fail-build` input defined in action metadata file
     const failBuild = core.getInput('fail-build');
 
+    console.log(`Testing Update 1`);
+
     // `exclude-words` input defined in action metadata file
     const excludeTerms = core.getInput('exclude-terms');
     console.log(`Excluding terms: ${excludeTerms}`);
