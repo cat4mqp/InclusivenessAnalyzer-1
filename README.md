@@ -6,6 +6,10 @@ The Inclusiveness Analyzer is a GitHub action that checks your repository for of
 
 It also provides context on why a word is exclusive and suggests alternate terms that can be used instead.
 
+The action can be triggered by a workflow for different events, like when pushing a commit or tag.
+
+>[Intro clip]
+
 ## Inclusiveness Analyzer for other Platforms
 
 * [Inclusiveness Analyzer Visual Studio Extension](https://github.com/microsoft/InclusivenessAnalyzerVisualStudio)
@@ -15,11 +19,13 @@ It also provides context on why a word is exclusive and suggests alternate terms
 
 As humans, we hold many unconscious and implicit biases that we rely on to react quickly to our environment and any novel stimuli. However, since the unconscious brain processes and reacts with speed, we sometimes speak quickly without thinking, which may cause us to slip offensive terms and stereotypes although we mean no malice.
 
-In order to confront these biases that we see in ourselves and others, we must rewire ourselves to regularly use inclusive practices (such as the words we speak). If you don't intentionally and proactively include, you will unintentionally exclude.
+In order to confront these biases that we see in ourselves and others, we must rewire ourselves to regularly use inclusive practices (such as the words we speak). If you don't intentionally and proactively include, you will unintentionally exclude. 
 
 > Join our effort to push out exclusive terms and make inclusive terms a part of our everyday vocabulary!
 
 Help us confront these biases by pushing out exclusive terms and making inclusive terms a part of our everyday vocabulary!
+
+Happy inclusive :heart: coding!
 
 ## Contributing
 
