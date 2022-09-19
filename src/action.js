@@ -12,7 +12,7 @@ async function run() {
     // `who-to-greet` input defined in action metadata file
     const nameToGreet = core.getInput('who-to-greet');
     console.log(`Hello ${nameToGreet}!`);
-    const outputError = core.getInput('outputError');
+    const outputType = core.getInput('outputType');
     const time = (new Date()).toTimeString();
     core.setOutput("time", time);
 
@@ -49,7 +49,7 @@ async function run() {
     });
 
     if (!passed)
-      if (outputError) {
+      if (outputType == 'failure') {
         core.setFailed("Found non inclusive terms in some files.");
       }
       else {

@@ -5,6 +5,10 @@ inputs:
     description: 'Who to greet'
     required: false
     default: 'World'
+  outputType:
+    description: 'Output results as "failure" or "warning".'
+    required: false
+    default: 'warning'
 outputs:
   time: # id of output
     description: 'The time we greeted you'
