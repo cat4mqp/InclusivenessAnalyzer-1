@@ -12,6 +12,7 @@ async function run() {
     // `who-to-greet` input defined in action metadata file
     const nameToGreet = core.getInput('who-to-greet');
     console.log(`Hello ${nameToGreet}!`);
+    const outputError = core.getInput('outputError');
     const time = (new Date()).toTimeString();
     core.setOutput("time", time);
 
@@ -28,7 +29,8 @@ async function run() {
 
     filenames.forEach(filename => {
       console.log(`Scanning file: ${filename}`);
-      
+      core.startGroup(`Scanning file: ${filename}`);
+
       nonInclusiveTerms.forEach(phrase => {
         var lines = checkFileForPhrase(filename.toString(), phrase.term);
 
@@ -36,16 +38,23 @@ async function run() {
           // The Action should fail
           passed = false;
 
-          console.log(`Found the term '${phrase.term}', consider using alternatives: ${phrase.alternatives}`);
+          core.warning(`Found the term '${phrase.term}', consider using alternatives: ${phrase.alternatives}`);
           lines.forEach(line => {
-            console.log(`\t[Line ${line.number}] ${line.content}`);
+            core.warning(`\t[Line ${line.number}] ${line.content}`);
           });
         }
       });
+
+      core.endGroup();
     });
 
     if (!passed)
-      core.setFailed("Found non inclusive terms in some files.");
+      if (outputError) {
+        core.setFailed("Found non inclusive terms in some files.");
+      }
+      else {
+        core.warning("Found non inclusive terms in some files.");
+      }
 
   } catch (error) {
     core.setFailed(error.message);
