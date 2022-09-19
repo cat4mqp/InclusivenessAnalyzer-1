@@ -39,9 +39,9 @@ async function run() {
             // The Action should fail
             passed = false;
 
-            console.log(`Found the term '${phrase.term}', consider using alternatives: ${phrase.alternatives}`);
+            core.warning(`Found the term '${phrase.term}', consider using alternatives: ${phrase.alternatives}`);
             lines.forEach(line => {
-              console.log(`\t[Line ${line.number}] ${line.content}`);
+              core.warning(`\t[Line ${line.number}] ${line.content}`);
             });
           }
         }
