@@ -1,35 +1,30 @@
 ---
-date: 2022-01-01
+date: 2022-01-02
 title: GitHub Action
-categories:
+categories: 
    - install
 author_staff_member: merill
 ---
+Unconscious bias is something that is present in everyone. In the current digital age, we have to be proactive in our efforts to include, otherwise we may unintionally exclude.
 
-Direct selling is the marketing and selling of products directly to consumers away from a fixed retail location. Peddling is the oldest form of direct selling. Modern direct selling includes sales made through the party plan, one-on-one demonstrations, and other personal contact arrangements as well as internet sales.
+![Man](https://source.unsplash.com/random/1500x1146)
 
-![Checkmate](https://source.unsplash.com/random/1500x1145)
+Bias is something that can incubate inside anyone, and these biases can affect everything that we touch. As a company, Microsoft embodies inclusion as a core priority.
 
-## Textbook definition
+As of 2019, it became a vital part of the way employee reviews were conducted, and it is integral to the success of the company.
 
-A textbook definition is: "The direct personal presentation, demonstration, and sale of products and services to consumers, usually in their homes or at their jobs."
+The concept of unconscious bias is not a new idea. It has been shown to affect the way we use words, the way we interact with the world, and the way people are treated in various scenarios. In the workplace, it can affect the data used in promotional reviews.
 
-## How effective is direct selling?
+## GitHub Action
 
-Industry representative, the World Federation of Direct Selling Associations (WFDSA), reports that its 59 regional member associations accounted for more than US$183 billion in retail sales in 2014, through the activities of more than 62 million independent sales representatives. The United States Direct Selling Association (DSA) reported that in 2000, 55% of adult Americans had at some time purchased goods or services from a direct selling representative and 20% reported that they were currently(6%) or had been in the past(14%) a direct selling representative.
+The Inclusiveness Analyzer is a way to utilize proactive change in our choice of words. It checks repositories for exclusive language while offering suggestions for more inclusive language.
 
-![Office](https://source.unsplash.com/random/1500x1146)
+![Thai](https://source.unsplash.com/random/1500x1147)
 
-According to the WFDSA, consumers benefit from direct selling because of the convenience and service it provides, including personal demonstration and explanation of products, home delivery, and generous satisfaction guarantees. In contrast to franchising, the cost for an individual to start an independent direct selling business is typically very low with little or no required inventory or other cash commitments to begin.
+The GitHub action of the Inclusiveness Analyzer allows for us to create more oppotunities for developers to practice inclusive coding.
 
-Most direct selling associations around the world require their members to abide by a code of conduct towards a fair partnership both with customers and salesmen...
+![lavender flowers](https://source.unsplash.com/random/1500x1148)
 
-Most national direct selling associations are represented in the World Federation of Direct Selling Associations (WFDSA).
+Studies have shown that proactively changing behavior patterns through word choice can positively improve their unconscious bias! The Inclusiveness Analyzer gives us a way to be proactive in our fight against bias.
 
-## How's it different to marketing?
-
-Direct selling is distinct from direct marketing because it is about individual sales agents reaching and dealing directly with clients. Direct marketing is about business organizations seeking a relationship with their customers without going through an agent/consultant or retail outlet.
-
-Direct selling consists of two main business models: single-level marketing, in which a direct seller makes money by buying products from a parent organization and selling them directly to customers, and multi-level marketing (also known as network marketing or person-to-person marketing), in which the direct seller makes money from both direct sales to customers and by sponsoring new direct sellers and earning a commission from their efforts.
-
-![Raspberries](https://source.unsplash.com/random/1500x1147)
+[source](https://hbr.org/2021/09/unconscious-bias-training-that-works): Harvard Business Review
